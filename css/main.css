@@ -30,6 +30,9 @@ body {
   transform: translateY(0);
   transition: transform 0.3s linear;
 }
+.chart:hover {
+  transform: translateY(-5px);
+}
 .wrong {
   background-color: red;
   cursor: auto;
