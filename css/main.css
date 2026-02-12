@@ -37,3 +37,6 @@ body {
   background-color: red;
   cursor: auto;
 }
+.correct {
+  background-color: green;
+}

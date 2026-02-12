@@ -10,18 +10,16 @@ class Square {
     return this.#isWinning;
   }
 }
-const arrayOfSquare = [
-  new Square(1, true),
-  new Square(2, false),
-  new Square(3, false),
-  new Square(4, false),
-  new Square(5, false),
-  new Square(6, false),
-  new Square(7, false),
-  new Square(8, false),
-  new Square(9, false),
-  new Square(10, false),
-];
+let randomItem = Math.floor(Math.random() * 10);
+const arrayOfSquare = [];
+for (let i = 0; i < 10; i++) {
+  if (i === randomItem - 1) {
+    arrayOfSquare.push(new Square(i + 1, true));
+  } else {
+    arrayOfSquare.push(new Square(i + 1, false));
+  }
+}
+console.log(arrayOfSquare);
 
 function rendering(array) {
   array.forEach((element) => {
