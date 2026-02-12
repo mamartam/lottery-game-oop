@@ -29,3 +29,16 @@ function rendering(array) {
   });
 }
 rendering(arrayOfSquare);
+
+chartsContainer.addEventListener("click", (el) => {
+  if (el.target.classList.contains("chart")) {
+    let fff = arrayOfSquare.find((item) => {
+      return Number(item.numb) === Number(el.target.textContent);
+    });
+    if (fff.check()) {
+      alert("You win");
+    } else {
+      alert("Try again");
+    }
+  }
+});
