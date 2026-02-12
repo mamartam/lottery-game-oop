@@ -1,0 +1,31 @@
+const chartsContainer = document.querySelector(".charts-container");
+
+class Square {
+  #isWinning;
+  constructor(numb, isWinning) {
+    this.#isWinning = isWinning;
+    this.numb = numb;
+  }
+  check() {
+    return this.#isWinning;
+  }
+}
+const arrayOfSquare = [
+  new Square(1, true),
+  new Square(2, false),
+  new Square(3, false),
+  new Square(4, false),
+  new Square(5, false),
+  new Square(6, false),
+  new Square(7, false),
+  new Square(8, false),
+  new Square(9, false),
+  new Square(10, false),
+];
+
+function rendering(array) {
+  array.forEach((element) => {
+    chartsContainer.innerHTML += `<div class="basic chart">${element.numb}</div>`;
+  });
+}
+rendering(arrayOfSquare);
