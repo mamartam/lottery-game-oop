@@ -19,7 +19,6 @@ for (let i = 0; i < 10; i++) {
     arrayOfSquare.push(new Square(i + 1, false));
   }
 }
-console.log(arrayOfSquare);
 
 function rendering(array) {
   array.forEach((element) => {
@@ -47,6 +46,5 @@ chartsContainer.addEventListener("click", (el) => {
       alert("Game over");
       chartsContainer.innerHTML = "";
     }
-    console.log(amoutsOfClick);
   }
 });
