@@ -8,7 +8,11 @@
 }
 /* BASIC STYLES */
 body {
+  min-height: 100vh;
   background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .charts-container {
   display: flex;
@@ -39,4 +43,13 @@ body {
 }
 .correct {
   background-color: green;
+}
+.start-game-btn {
+  padding: 15px;
+  background-color: lightblue;
+  margin: auto;
+  display: block;
+}
+.disable {
+  display: none;
 }
