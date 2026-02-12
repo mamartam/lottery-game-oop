@@ -30,6 +30,7 @@ function rendering(array) {
 }
 rendering(arrayOfSquare);
 
+let amoutsOfClick = 0;
 chartsContainer.addEventListener("click", (el) => {
   if (el.target.classList.contains("chart")) {
     let fff = arrayOfSquare.find((item) => {
@@ -40,8 +41,14 @@ chartsContainer.addEventListener("click", (el) => {
       chartsContainer.innerHTML = "";
     } else {
       alert("Try again");
+      amoutsOfClick++;
       el.target.classList.add("wrong");
       el.target.classList.remove("chart");
     }
+    if (amoutsOfClick >= 3) {
+      alert("Game over");
+      chartsContainer.innerHTML = "";
+    }
+    console.log(amoutsOfClick);
   }
 });
