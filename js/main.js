@@ -37,8 +37,11 @@ chartsContainer.addEventListener("click", (el) => {
     });
     if (fff.check()) {
       alert("You win");
+      chartsContainer.innerHTML = "";
     } else {
       alert("Try again");
+      el.target.classList.add("wrong");
+      el.target.classList.remove("chart");
     }
   }
 });

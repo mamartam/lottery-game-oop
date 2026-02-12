@@ -30,3 +30,7 @@ body {
   transform: translateY(0);
   transition: transform 0.3s linear;
 }
+.wrong {
+  background-color: red;
+  cursor: auto;
+}
