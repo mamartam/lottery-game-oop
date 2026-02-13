@@ -1,4 +1,4 @@
-#Lottery game oop
+# Lottery game oop
 
 An interactive JavaScript lottery game using ES6+ Classes. Features private data fields for game integrity, random win generation, and a responsive UI. Developed to practice OOP architecture and DOM manipulation best practices.
 
